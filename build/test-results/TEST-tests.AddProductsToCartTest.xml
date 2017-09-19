@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AddProductsToCartTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-09-19T22:38:18" hostname="Joses-macbook.local" time="19.904">
+<testsuite name="tests.AddProductsToCartTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-09-19T22:49:29" hostname="Joses-macbook.local" time="23.479">
   <properties/>
-  <testcase name="add1ProductAndCartPageOfferTest" classname="tests.AddProductsToCartTest" time="6.033"/>
-  <testcase name="add2ProductsToTheCartTest" classname="tests.AddProductsToCartTest" time="8.859"/>
+  <testcase name="add1ProductAndCartPageOfferTest" classname="tests.AddProductsToCartTest" time="10.867"/>
+  <testcase name="add2ProductsToTheCartTest" classname="tests.AddProductsToCartTest" time="7.937"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
