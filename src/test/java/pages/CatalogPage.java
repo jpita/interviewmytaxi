@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -17,7 +16,7 @@ public class CatalogPage extends BasePage{
     public ProductPage goToProductPageByName(String productName){
         WebElement element = driver.findElement(By.xpath("//div[@class='box product']//img[@alt='"+productName+"']"));
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        scrollToElement(element);
 
         element.click();
         return new ProductPage(driver, productName);

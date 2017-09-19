@@ -8,9 +8,9 @@ import pages.ProductPage;
 
 import static org.testng.Assert.assertTrue;
 
-public class RegisterBankAccountTest extends BaseTest{
+public class AddProductsToCartTest extends BaseTest{
 
-    @Test(description = "test that we can add one product to the cart and the cart page offer")
+    @Test(description = "test that we can add one product and the cart page offer to the cart")
     public void add1ProductAndCartPageOfferTest(){
         LandingPage landingPage = new LandingPage(driver);
         assertTrue(landingPage.isLoaded(), "landing page not loaded");

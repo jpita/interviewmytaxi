@@ -2,6 +2,7 @@ package pages;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -44,8 +45,16 @@ public class BasePage extends BaseTest{
         return Integer.parseInt(cartCountLabel.getText()) == cartCount+1;
     }
 
+
+
+
+
     protected WebElement waitForElementToBeVisible(WebElement element) {
         return waitForElementToBeVisibleWithTimeOut(element, 5);
+    }
+
+    protected void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     protected WebElement waitForElementToBeVisibleWithTimeOut(WebElement element, int seconds) {
